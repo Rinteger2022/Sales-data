@@ -22,3 +22,4 @@ url = url_2
 response = requests.request("GET", url, headers=headers).json()
  
 st.write(response)
+st.write(url)
