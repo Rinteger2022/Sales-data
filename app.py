@@ -20,3 +20,4 @@ headers = {"Authorization": "Bearer {}".format(bearer_token)}
 url = "https://72ab3c1c126c24365a51553f67e1db84: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@acelance.myshopify.com/admin/api/2022-01/orders/count.json?status=any&updated_at_min=str(start_date)&updated_at_max=str(end_date)"
 response = requests.request("GET", url, headers=headers).json()
  
+st.write(response)
