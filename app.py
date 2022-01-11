@@ -3,8 +3,8 @@ import datetime
 
 today = datetime.date.today()
 tomorrow = today + datetime.timedelta(days=1)
-start_date = st.date_input('Start date', today)
-end_date = st.date_input('End date', tomorrow)
+start_date = st.date_input('Start date')
+end_date = st.date_input('End date')
 #if start_date < end_date:
  #   st.success('Start date: `%s`\n\nEnd date:`%s`' % (start_date, end_date))
 #else:
@@ -20,6 +20,7 @@ url_1="https://72ab3c1c126c24365a51553f67e1db84:shppa_bef4ed96c65793adc37feef941
 url_2=url_1+"&updated_at_max="+str(end_date)
 url = url_2
 response = requests.request("GET", url, headers=headers).json()
- 
-st.write(response)
-st.write(url)
+
+if start_date < end_date:
+ st.write(response)
+ st.write(url)
