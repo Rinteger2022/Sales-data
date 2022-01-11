@@ -25,4 +25,4 @@ if start_date < end_date:
  st.write(response)
  st.write(url)
  a=url.json()["count"]
- st.write(a)
+ st.write(str(a))
