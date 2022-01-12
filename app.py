@@ -16,7 +16,7 @@ end_date = st.date_input('End date')
 #else:
   #  st.error('Error: End date must fall after start date.')
 
-currentTimeDate = end_date - timedelta(days=1)
+currentTimeDate = end_date + timedelta(days=1)
 currentTime = currentTimeDate.strftime('%Y-%m-%d')
 st.write(currentTime)
 
