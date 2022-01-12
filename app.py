@@ -13,7 +13,8 @@ end_date = st.date_input('End date')
 import requests
 import pandas as pd
 import os
-a=end_date+timedelta(days = 1)
+st.write(end_date)
+a=end_date + timedelta(days = 1)
 bearer_token = os.environ.get('BEARER_TOKEN')
 headers = {"Authorization": "Bearer {}".format(bearer_token)}
 url_1="https://72ab3c1c126c24365a51553f67e1db84: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@acelance.myshopify.com/admin/api/2022-01/orders/count.json?status=any&created_at_min="+str(start_date)
