@@ -7,8 +7,8 @@ import pandas as pd
 import os
 
 
-today = datetime.date.today()
-tomorrow = today + datetime.timedelta(days=1)
+#today = datetime.date.today()
+#tomorrow = today + datetime.timedelta(days=1)
 start_date = st.date_input('Start date')
 end_date = st.date_input('End date')
 #if start_date < end_date:
