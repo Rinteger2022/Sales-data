@@ -17,7 +17,7 @@ import os
 bearer_token = os.environ.get('BEARER_TOKEN')
 headers = {"Authorization": "Bearer {}".format(bearer_token)}
 url_1="https://72ab3c1c126c24365a51553f67e1db84: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@acelance.myshopify.com/admin/api/2022-01/orders/count.json?status=any&created_at_min="+str(start_date)
-url_2=url_1+"&created_at_max="+str(end_date)
+url_2=url_1+"&created_at_max="+str(end_date+ timedelta(days = 1 ))
 url = url_2
 response = requests.request("GET", url, headers=headers).json()
 
