@@ -26,8 +26,8 @@ response = requests.request("GET", url, headers=headers).json()
 if start_date <= end_date:
  st.write(response)
  st.write(url)
- a=url.json()["count"]
- st.write(str(a))
+# a=url.json()["count"]
+ #st.write(str(a))
 date = datetime(2020, 2, 20)
 date += timedelta(days=1)
 st.write(date)
