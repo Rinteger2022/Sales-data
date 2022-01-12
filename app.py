@@ -18,7 +18,7 @@ end_date = st.date_input('End date')
 
 currentTimeDate = end_date + timedelta(days=1)
 currentTime = currentTimeDate.strftime('%Y-%m-%d')
-st.write(currentTime)
+#st.write(currentTime)
 
 
 #a=end_date + timedelta(days = 1)
