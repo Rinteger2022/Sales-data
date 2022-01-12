@@ -21,7 +21,7 @@ url_2=url_1+"&created_at_max="+str(end_date)
 url = url_2
 response = requests.request("GET", url, headers=headers).json()
 
-if start_date < end_date:
+if start_date <= end_date:
  st.write(response)
  st.write(url)
  a=url.json()["count"]
