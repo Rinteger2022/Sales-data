@@ -31,3 +31,7 @@ if start_date <= end_date:
 date = datetime(2020, 2, 20)
 date += timedelta(days=1)
 st.write(date)
+from datetime import datetime,timedelta
+currentTimeDate = datetime.now() - timedelta(days=1)
+currentTime = currentTimeDate.strftime('%Y-%m:%d')
+st.write(currentTime)
