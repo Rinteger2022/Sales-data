@@ -16,5 +16,5 @@ DATA_URL = ("https://docs.google.com/spreadsheets/d/e/2PACX-1vShThnh_A7EQokSMvs1
 #st.subheader(‘Weekly Demand Data’)
 #st.write(weekly_data)
 #Bar Chart
-st.bar_chart(DATA_URL[‘Reach’])
-st.bar_chart(DATA_URL[‘Platform’])
+st.bar_chart(DATA_URL["Reach"])
+st.bar_chart(DATA_URL["Platform"])
