@@ -2,11 +2,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
-from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
 
-st.title("Sentiment Analysis of Tweets about US Airlines")
-st.sidebar.title("Sentiment Analysis of Tweets about US Airlines")
+st.title("Product Intelligent")
+st.sidebar.title("Inventory")
 
 st.markdown("Product Intelligent ")
 st.sidebar.markdown("Inventory And Product Performance")
