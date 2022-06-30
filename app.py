@@ -13,8 +13,8 @@ st.sidebar.markdown("Inventory And Product Performance")
 
 DATA_URL = ("https://docs.google.com/spreadsheets/d/e/2PACX-1vShThnh_A7EQokSMvs1MKzDDzpZp13tOI2d9AjSGoxYgVYOcpgkwqhQD0tQT5pR8M3gOx7YZn9lS4Tr/pub?gid=1172464903&single=true&output=csv")
 #DATA_URL_1 = ("https://docs.google.com/spreadsheets/d/e/2PACX-1vShThnh_A7EQokSMvs1MKzDDzpZp13tOI2d9AjSGoxYgVYOcpgkwqhQD0tQT5pR8M3gOx7YZn9lS4Tr/pub?gid=995490562&single=true&output=csv")
-#st.subheader(‘Weekly Demand Data’)
+st.print(DATA_URL)
 #st.write(weekly_data)
 #Bar Chart
-st.bar_chart(DATA_URL["Reach"])
-st.bar_chart(DATA_URL["Platform"])
+#st.bar_chart(DATA_URL["Reach"])
+#st.bar_chart(DATA_URL["Platform"])
