@@ -17,5 +17,5 @@ DATA_URL = ("https://docs.google.com/spreadsheets/d/e/2PACX-1vShThnh_A7EQokSMvs1
 data=load
 st.write(DATA_URL["Reach"])
 #Bar Chart
-#st.bar_chart(DATA_URL["Reach"])
+st.bar_chart(DATA_URL["Reach"])
 #st.bar_chart(DATA_URL["Platform"])
