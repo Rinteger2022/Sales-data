@@ -16,7 +16,7 @@ DATA_URL = ("https://docs.google.com/spreadsheets/d/e/2PACX-1vShThnh_A7EQokSMvs1
 #st.subheader(‘Weekly Demand Data’)
 #st.write(weekly_data)
 #Bar Chart
-df = pd.DataFrame(DATA_URL[:200], columns = ["Reach","Impressions","Frequency"])
+df = pd.DataFrame(DATA_URL[:20], columns = ["Reach","Impressions","Frequency"])
 df.hist()
 plt.show()
 st.pyplot()
